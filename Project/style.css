@@ -1,3 +1,4 @@
+/*-----------------------header-------------------*/
 *{
    margin: 0;
    padding: 0;
@@ -55,6 +56,8 @@ p{
 .header{
 	background: radial-gradient(#fff,#ffd6d6);
 }
+
+/*-----------------------categories-------------------*/
 .categories{
 	margin:70px 0;
 }
@@ -66,6 +69,8 @@ p{
 .col-3 img{
 	width: 100%;
 }
+
+/*-----------------------small-container-------------------*/
 .small-container{
 	max-width: 1080px;
 	margin: auto;
@@ -101,6 +106,8 @@ p{
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+/*-----------------------Latest products-------------------*/
 h4{
 	color: #555;
 	font-weight: normal;
@@ -114,6 +121,8 @@ h4{
 .col-4:hover{
 	transform: translateY-5px();
 }
+
+/*-----------------------footer-------------------*/
 .footer{
 	background: #000;
 	color: #8a8a8a;
@@ -121,19 +130,85 @@ h4{
 	padding: 60px 0 20px;
 }
 .footer p{
-	background: #8a8a8a;
+	background: #000;
 }
 .footer h3{
-	background: #fff;
+	background: #000;
 	margin-bottom: 20px;
 }
 
 
+/*-------------account--------------*/
+.account-page{
+	padding: 50px 0;
+	background: radial-gradient(#fff,#ffd6d6);
+	
+}
+.form-container{
+	background: #98FB98;
+	width: 360px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0,1);
+	overflow: hidden;
+}
+.form-container span{
+	font-weight: bold;
+	padding: 0 10px;
+	color: #228B22;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+}
+.form-btn{
+	display: inline-block;
+	
+}
+.form-container form{
+	max-width:300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+	transition: transform 1s;
+}
+form input{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+}
 
-
-
-
-
+form .btn{
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	margin: 15px 0;
+}
+form .btn:focus{
+	outline: none;
+}
+#loginForm{
+	left: -300px;
+}
+#Registation{
+	left: 0;
+}
+form a{
+	font-size: 12px;
+}
+#Indicator{
+	width: 100px;
+	border: none;
+	background: #ff523b;
+	height: 3px;
+	margin-top: 8px;
+	transform: translateX(100px);
+	transition: transform 1s;
+}
 
 
 

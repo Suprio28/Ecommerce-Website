@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Ecommerce site</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-----------------------header------------------->
+<div class="header">
+    <div class="container">
+      <div class="navbar">
+         <div class="logo">
+	      <img src="images/logo.png" width="125px">
+	     </div>
+	     <nav>
+	       <ul>
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="">Product</a></li>
+		    <li><a href="">About</a></li>
+		    <li><a href="">Contuct</a></li>
+		    <li><a href="">Account</a></li>
+	       </ul>
+	     </nav>
+		 <img src="images/cart.png" width="30px" height="30px">
+       </div>
+   </div>
+</div>
+
+<!---------------account--------------->
+<div class="account-page">
+   <div class="container">
+      <div class="row">
+	     <div class="col-2">
+		   <img src="images/pngkey.com-men-fashion-model-png-3650575.png" width="100%">
+		 </div>
+		 <div class=col-2>
+		    <div class="form-container">
+			    <div class="form-btn">
+				<span onclick="login()">Log in</span>
+				<span onclick="Registation()">Registation</span>
+				<hr id="Indicator">
+				</div>
+				
+				<form id="loginForm">
+				    <input type="text" placeholder="Username">
+					<input type="password" placeholder="Password">
+					<button type="submit" class="btn">Login</button>
+					<a href="">Forgate password</a>
+				</form>
+				
+				<form id="Registation">
+				    <input type="text" placeholder="Username">
+					<input type="Email" placeholder="Email">
+					<input type="password" placeholder="Password">
+					<button type="submit" class="btn">Registation</button>
+				</form>
+			</div>
+		 </div>
+		 		 
+		 
+	  </div>
+   </div>
+</div>
+
+<!--------------footer------------->
+<div class="footer">
+   <div class="container">
+      <div class="row">
+	     <div class="footer-col-1">
+		   <h3>Download our App</h3>
+		   <p>Download App for android and iso mpbile phone.</p>
+		 </div>
+		 <div class="footer-col-2">
+		   <img src="images/logo-white.png">
+		   <p>Download App for android and iso mpbile phone.</p>
+		 </div>
+		 <div class="footer-col-3">
+		   <h3>Useful links</h3>
+		   <ul>
+		     <li>Coupons</li>
+			 <li>Blog Post</li>
+			 <li>Return policy</li>
+			 <li>Join Affiliate</li>
+		   </ul>
+		 </div>
+		 <div class="footer-col-4">
+		   <h3>Follow us</h3>
+		   <ul>
+		     <li>Facebook</li>
+			 <li>Twitter</li>
+			 <li>Inistagram</li>
+			 <li>Youtube</li>
+		   </ul>
+		 </div>
+		 
+	  </div>
+   </div>
+</div>
+
+
+
+
+
+<script>
+   var loginForm = document.getElementById("loginForm");
+   var Registation = document.getElementById("Registation");
+   var indicator = document.getElementById("Indicator");
+         function Registation(){
+		      Registation.style.transform = "translateX(0px)";
+			  loginForm.style.transform = "translateX(0px)";
+			  Indicator.style.transform = "translateX(100px)";
+		 }
+		 function Login(){
+		      Registation.style.transform = "translateX(300px)";
+			  loginForm.style.transform = "translateX(300px)";
+			  Indicator.style.transform = "translateX(0px)";
+		 }
+
+</script>
+
+
+
+
+
+</body>
+</html>
